@@ -1,0 +1,10 @@
+﻿{
+  "ProviderId": "Microsoft.Azure.Storage",
+  "Version": "16.4",
+  "GettingStartedDocument": {
+    "Uri": "https://go.microsoft.com/fwlink/?LinkId=513126"
+  },
+  "ExtendedData": {
+    "PublishEnvironmentProperties": {}
+  }
+}
