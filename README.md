@@ -1,6 +1,6 @@
 # Siga-Livre
 This is a simple API that gets every opened discipline in the Federal University of Rio de Janeiro. 
-~Click here to read in [Portuguese](README.pt.md)~
+* Click here to read in [Portuguese](README.pt.md)
 
 ![](https://github.com/DantasB/Siga-Livre/blob/master/ReadmeFiles/Siga-Livre.gif)
 
