@@ -1,5 +1,5 @@
 # Siga-Livre
-Essa é uma API simples que pega todas as disciplinas abertas na Universidade Federal do Rio de Janeiro.
+Essa é uma API simples que pega todas as disciplinas abertas na Universidade Federal do Rio de Janeiro. Clique aqui para ler em [Ingles](README.md)
 
 ![](https://github.com/DantasB/Siga-Livre/blob/master/ReadmeFiles/Siga-Livre.gif)
 
