@@ -1,7 +1,7 @@
 # Siga-Livre
 This is a simple API that gets every opened discipline in the Federal University of Rio de Janeiro.
 
-![](https://gyazo.com/52f1dfc8a6edd50a226d05cb06465471)
+![](https://github.com/DantasB/Siga-Livre/blob/master/ReadmeFiles/Siga-Livre.gif)
 
 ## How does it work?
 You first need to access the [website](https://sigalivre.azurewebsites.net/) of the api. There's two ways to use it.
