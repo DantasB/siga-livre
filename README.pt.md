@@ -1,7 +1,7 @@
 # Siga-Livre
 Essa é uma API simples que pega todas as disciplinas abertas na Universidade Federal do Rio de Janeiro. Versão em [inglês](README.pt.md).
 
-## Content:
+## Conteúdo:
 * [Como isso funciona?](#Como-isso-funciona?)
 * [Como eu uso isso?](#Como-eu-uso-isso?)
 * [Como eu posso te ajudar? ](#Como-eu-posso-te-ajudar?)
