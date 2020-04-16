@@ -2,10 +2,10 @@
 Essa é uma API simples que pega todas as disciplinas abertas na Universidade Federal do Rio de Janeiro. Versão em [inglês](README.pt.md).
 
 ## Content:
-* [How does it work?](#How-does-it-work?)
-* [How can i use it?](#How-can-i-use-it?)
-* [How can i help you?](#How-can-i-help-you?)
-* [Attention](#Attention)
+* [Como isso funciona?](#Como-isso-funciona?)
+* [Como eu uso isso?](#Como-eu-uso-isso?)
+* [Como eu posso te ajudar? ](#Como-eu-posso-te-ajudar?)
+* [Atenção](#Atenção)
 
 ![](https://github.com/DantasB/Siga-Livre/blob/master/ReadmeFiles/Siga-Livre.gif)
 
