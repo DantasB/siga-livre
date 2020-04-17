@@ -1,26 +1,17 @@
-﻿using MongoDB.Bson.Serialization.Attributes;
-using MongoDB.Bson.Serialization.IdGenerators;
+﻿using MongoDB.Bson;
+using MongoDB.Bson.Serialization.Attributes;
 using System.Collections.Generic;
 
 
 namespace SigaClasses.Models
 {
-    [BsonDiscriminator("Disciplina")]
+
     public class Disciplina
     {
-
-        [BsonElement("Código")]
         public string Código { get; set; }
-        [BsonElement("Número")]
         public string Número { get; set; }
-
-        [BsonElement("Nome")]
         public string Nome { get; set; }
-
-        [BsonElement("Professor")]
         public string Professor { get; set; }
-
-        [BsonElement("Dias")]
         public List<Dia> Dias { get; set; }
     }
 
@@ -35,6 +26,16 @@ namespace SigaClasses.Models
     {
         public Dictionary<string, Dictionary<string, List<Disciplina>>> Cursos { get; set; }
         public string Erro { get; set; }
+    }
+
+    public class Result
+    {
+        [BsonId]
+        [BsonRepresentation(BsonType.ObjectId)]
+        public string _id { get; set; }
+        public string Curso { get; set; }
+        public Dictionary<string, List<Disciplina>> Disciplinas { get; set; }
+        public string Ano { get; set; }
     }
 
 }

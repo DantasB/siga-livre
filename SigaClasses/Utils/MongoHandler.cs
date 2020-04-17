@@ -1,6 +1,8 @@
 ﻿using MongoDB.Bson;
 using MongoDB.Driver;
+using SigaClasses.Models;
 using System;
+using System.Collections.Generic;
 
 namespace SigaClasses.Utils
 {
@@ -12,7 +14,7 @@ namespace SigaClasses.Utils
         private static string Login          { get; set; }
         private static string Password       { get; set; }
 
-        private static IMongoCollection<BsonDocument> Collection { get; set; }
+        private static IMongoCollection<Result> Collection { get; set; }
 
         public static bool ConnectToMongo()
         {
@@ -23,7 +25,7 @@ namespace SigaClasses.Utils
 
                 MongoClient dbClient                      = new MongoClient(atlasString);
                 IMongoDatabase database                   = dbClient.GetDatabase(DatabaseName);
-                Collection                                = database.GetCollection<BsonDocument>(CollectionName);
+                Collection                                = database.GetCollection<Result>(CollectionName);
             }
             catch (Exception ex)
             {
@@ -44,6 +46,23 @@ namespace SigaClasses.Utils
             return true;
         }
 
+        public static void SaveOnMongo(Result curso)
+        {
+            Collection.InsertOne(curso);
+            return;
+        }
 
+        public static Result IsOnMongo(string course)
+        {
+            FilterDefinition<Result> filter = Builders<Result>.Filter.Eq("Curso", course);
+            List<Result> results = Collection.Find(filter).ToList();
+
+            if (results.Count == 0)
+            {
+                return null;
+            }
+
+            return results[0];
+        }
     }
 }
